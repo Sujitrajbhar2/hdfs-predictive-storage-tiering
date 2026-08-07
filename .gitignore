@@ -48,7 +48,10 @@ Thumbs.db
 *.zip
 
 # Generated ML files
-*.pkl
+# Streamlit deployment model files
+!010_Dashboard/models/best_model.pkl
+!010_Dashboard/models/feature_columns.pkl
+!010_Dashboard/models/target_encoder.pkl
 *.joblib
 
 # Temporary output
