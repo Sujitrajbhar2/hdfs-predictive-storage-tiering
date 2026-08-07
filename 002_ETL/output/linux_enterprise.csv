@@ -1,0 +1,13 @@
+Source,Object_Name,Category,Department,Extension_Type,Size_KB,Created_Date,Modified_Date,Owner,Location,Priority,Storage_Tier
+Linux Server,backup_2026_01.tar,Linux File,backup,.tar,193.0,2026-07-31 15:02:05.383189,2026-07-31 15:02:05.384196,Linux System,backup,Medium,Unknown
+Linux Server,backup_2026_02.tar,Linux File,backup,.tar,444.0,2026-07-31 15:02:05.385192,2026-07-31 15:02:05.385192,Linux System,backup,Medium,Unknown
+Linux Server,app.conf,Linux File,configs,.conf,632.0,2026-07-31 15:02:05.387184,2026-07-31 15:02:05.388198,Linux System,configs,Medium,Unknown
+Linux Server,database.conf,Linux File,configs,.conf,314.0,2026-07-31 15:02:05.390191,2026-07-31 15:02:05.392191,Linux System,configs,Medium,Unknown
+Linux Server,nginx.conf,Linux File,configs,.conf,149.0,2026-07-31 15:02:05.389186,2026-07-31 15:02:05.389186,Linux System,configs,Medium,Unknown
+Linux Server,access.log,Linux File,logs,.log,244.0,2026-07-31 15:02:05.162740,2026-07-31 15:02:05.220013,Linux System,logs,Medium,Unknown
+Linux Server,auth.log,Linux File,logs,.log,65.0,2026-07-31 15:02:05.294513,2026-07-31 15:02:05.295532,Linux System,logs,Medium,Unknown
+Linux Server,error.log,Linux File,logs,.log,595.0,2026-07-31 15:02:05.260121,2026-07-31 15:02:05.260643,Linux System,logs,Medium,Unknown
+Linux Server,system.log,Linux File,logs,.log,286.0,2026-07-31 15:02:05.104033,2026-07-31 15:02:05.105062,Linux System,logs,Medium,Unknown
+Linux Server,analytics_engine.tar.gz,Linux File,projects,.gz,579.0,2026-07-31 15:02:05.419189,2026-07-31 15:02:05.420202,Linux System,projects,Medium,Unknown
+Linux Server,project_alpha.zip,Linux File,projects,.zip,371.0,2026-07-31 15:02:05.393196,2026-07-31 15:02:05.395199,Linux System,projects,Medium,Unknown
+Linux Server,project_beta.zip,Linux File,projects,.zip,206.0,2026-07-31 15:02:05.396194,2026-07-31 15:02:05.397205,Linux System,projects,Medium,Unknown

@@ -1,0 +1,20 @@
+Source,Object_Name,Category,Department,Extension_Type,Size_KB,Created_Date,Modified_Date,Owner,Location,Priority,Storage_Tier
+Windows Server,architecture_diagram.vsdx,Windows File,Engineering,.vsdx,438.0,2026-07-31 14:26:33.622078,2026-07-31 14:26:33.623082,Engineering,Engineering,Medium,Unknown
+Windows Server,deployment_guide.docx,Windows File,Engineering,.docx,391.0,2026-07-31 14:26:33.621076,2026-07-31 14:26:33.622078,Engineering,Engineering,Medium,Unknown
+Windows Server,project_specs.pdf,Windows File,Engineering,.pdf,117.0,2026-07-31 14:26:33.617082,2026-07-31 14:26:33.618073,Engineering,Engineering,Medium,Unknown
+Windows Server,release_notes.pdf,Windows File,Engineering,.pdf,466.0,2026-07-31 14:26:33.624084,2026-07-31 14:26:33.626081,Engineering,Engineering,Medium,Unknown
+Windows Server,source_code_backup.zip,Windows File,Engineering,.zip,215.0,2026-07-31 14:26:33.619084,2026-07-31 14:26:33.620078,Engineering,Engineering,Medium,Unknown
+Windows Server,budget_2026.xlsx,Windows File,Finance,.xlsx,488.0,2026-07-31 14:26:33.601082,2026-07-31 14:26:33.602082,Finance,Finance,Medium,Unknown
+Windows Server,expense_report.csv,Windows File,Finance,.csv,374.0,2026-07-31 14:26:33.607075,2026-07-31 14:26:33.608076,Finance,Finance,Medium,Unknown
+Windows Server,invoices.pdf,Windows File,Finance,.pdf,42.0,2026-07-31 14:26:33.603088,2026-07-31 14:26:33.604077,Finance,Finance,Medium,Unknown
+Windows Server,payroll_summary.xlsx,Windows File,Finance,.xlsx,53.0,2026-07-31 14:26:33.606075,2026-07-31 14:26:33.607075,Finance,Finance,Medium,Unknown
+Windows Server,tax_report.xlsx,Windows File,Finance,.xlsx,381.0,2026-07-31 14:26:33.604077,2026-07-31 14:26:33.605080,Finance,Finance,Medium,Unknown
+Windows Server,attendance.csv,Windows File,HR,.csv,495.0,2026-07-31 14:26:33.594072,2026-07-31 14:26:33.595075,HR,HR,Medium,Unknown
+Windows Server,employee_master.xlsx,Windows File,HR,.xlsx,277.0,2026-07-31 14:26:33.597077,2026-07-31 14:26:33.598075,HR,HR,Medium,Unknown
+Windows Server,employee_salary.xlsx,Windows File,HR,.xlsx,102.0,2026-07-31 14:26:33.591479,2026-07-31 14:26:33.593051,HR,HR,Medium,Unknown
+Windows Server,leave_requests.xlsx,Windows File,HR,.xlsx,321.0,2026-07-31 14:26:33.599077,2026-07-31 14:26:33.600079,HR,HR,Medium,Unknown
+Windows Server,offer_letters.docx,Windows File,HR,.docx,60.0,2026-07-31 14:26:33.595075,2026-07-31 14:26:33.597077,HR,HR,Medium,Unknown
+Windows Server,campaign_plan.pptx,Windows File,Marketing,.pptx,220.0,2026-07-31 14:26:33.610101,2026-07-31 14:26:33.611078,Marketing,Marketing,Medium,Unknown
+Windows Server,customer_feedback.csv,Windows File,Marketing,.csv,102.0,2026-07-31 14:26:33.612080,2026-07-31 14:26:33.612080,Marketing,Marketing,Medium,Unknown
+Windows Server,marketing_budget.xlsx,Windows File,Marketing,.xlsx,247.0,2026-07-31 14:26:33.615083,2026-07-31 14:26:33.616084,Marketing,Marketing,Medium,Unknown
+Windows Server,social_media_report.xlsx,Windows File,Marketing,.xlsx,225.0,2026-07-31 14:26:33.613081,2026-07-31 14:26:33.615083,Marketing,Marketing,Medium,Unknown

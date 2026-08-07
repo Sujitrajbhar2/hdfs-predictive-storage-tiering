@@ -1,0 +1,58 @@
+/* =========================================================
+   LAYOUT.CSS
+   Controls page spacing, section headers, and main content
+   width. This does NOT control card colors (see cards.css).
+   ========================================================= */
+
+/* Give the main content area some breathing room, but keep it
+   tight against the sidebar. Using a full-width container +
+   small equal padding (instead of a narrow max-width that
+   Streamlit centers with "margin: auto") is what removes any
+   empty gap next to the sidebar and lets the dashboard use
+   almost the full browser width. Multiple selectors are
+   targeted on purpose - Streamlit has renamed this container's
+   test-id across versions. */
+.block-container,
+[data-testid="stMainBlockContainer"] {
+    padding-top: 1.1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 18px;
+    padding-right: 22px;
+    max-width: 100% !important;
+    width: 100%;
+}
+
+[data-testid="stMain"],
+[data-testid="stAppViewContainer"] > .main {
+    padding-left: 0px;
+}
+
+/* Page main title (e.g. "DataTierAI Dashboard") - dark blue per theme */
+.page-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--header-color);
+    margin-bottom: 0px;
+}
+
+/* Small subtitle under the page title (e.g. "Executive Summary") */
+.page-subtitle {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    margin-bottom: 18px;
+}
+
+/* Section headings used above each group of charts (e.g. "AI Insights") */
+.section-heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1E3A8A;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+/* Adds space between one section and the next */
+.section-spacer {
+    height: 18px;
+}

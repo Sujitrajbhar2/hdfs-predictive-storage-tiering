@@ -1,0 +1,40 @@
+/* =========================================================
+   THEME.CSS
+   This file holds ALL the colors used in the dashboard.
+   If you want to change the color theme, this is the ONLY
+   file you need to touch. Every other CSS file just uses
+   the variable names below (like var(--primary)).
+   ========================================================= */
+
+:root {
+    /* Backgrounds */
+    --bg-main: #EEF5FC;
+    --bg-secondary: #F6FAFF;
+    --bg-card: #FFFFFF;
+
+    /* Borders */
+    --border-color: #D6E7FF;
+
+    /* Brand colors */
+    --primary: #2563EB;
+    --accent: #3B82F6;
+
+    /* Status colors */
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+
+    /* Text colors */
+    --text-main: #1E293B;
+    --text-muted: #64748B;
+    --header-color: #1E3A8A;  /* dark blue, used for page titles / section headings */
+
+    /* Shadows (used across cards, tables, buttons) */
+    --shadow-soft: 0 4px 14px rgba(37, 99, 235, 0.08);
+    --shadow-hover: 0 10px 24px rgba(37, 99, 235, 0.14);
+
+    /* Corner roundness (change this once to round every card/table) */
+    --radius-lg: 14px;
+    --radius-md: 10px;
+    --radius-sm: 8px;
+}

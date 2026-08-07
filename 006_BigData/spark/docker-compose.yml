@@ -1,0 +1,22 @@
+services:
+
+  spark-master:
+
+    image: apache/spark:latest
+
+    container_name: spark-master
+
+    hostname: spark-master
+
+    command: tail -f /dev/null
+
+    networks:
+      - docker_default
+
+    volumes:
+      - ../hive/conf/core-site.xml:/opt/spark/conf/core-site.xml
+      - ../../007_Spark_Processing:/opt/spark/work-dir
+
+networks:
+  docker_default:
+    external: true

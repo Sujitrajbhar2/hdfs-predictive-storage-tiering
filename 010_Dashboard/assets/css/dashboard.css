@@ -1,0 +1,37 @@
+/* =========================================================
+   DASHBOARD.CSS
+   Makes every row of cards (KPI cards, insight cards,
+   recommendation cards, chart cards) line up with equal
+   height and equal spacing.
+
+   Streamlit lays out st.columns() using flexbox, not CSS
+   Grid, so instead of writing a real "display: grid" (which
+   would fight Streamlit's own layout engine), we tell every
+   row to stretch its columns to the same height. The visual
+   result is the same as a CSS Grid: every card in a row
+   matches the tallest card in that row.
+   ========================================================= */
+
+/* A "row" of columns - stretch children instead of top-aligning them */
+[data-testid="stHorizontalBlock"] {
+    align-items: stretch;
+    gap: 16px;
+}
+
+/* Each column becomes a flex column so its content can grow to fill the row */
+[data-testid="column"] {
+    display: flex;
+    flex-direction: column;
+}
+
+/* The direct content wrapper inside a column should fill 100% of that height */
+[data-testid="column"] > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Consistent vertical gap between stacked cards (e.g. KPI card + nothing below it) */
+[data-testid="stVerticalBlock"] {
+    gap: 16px;
+}

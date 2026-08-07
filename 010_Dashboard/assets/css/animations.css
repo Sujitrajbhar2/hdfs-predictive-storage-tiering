@@ -1,0 +1,44 @@
+/* =========================================================
+   ANIMATIONS.CSS
+   All hover / entrance animations live here so you can
+   slow them down, speed them up, or remove them in one
+   place without hunting through cards.css.
+   ========================================================= */
+
+/* Simple fade + slight rise, used for cards as the page loads */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.kpi-card,
+.insight-card,
+.recommendation-card,
+.chart-card {
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    box-shadow:0 4px 12px rgba(15,23,42,.06);
+
+    border:1px solid #E2E8F0;
+
+    animation: fadeInUp 0.35s ease-in-out;
+}
+
+/* Buttons get a slightly bouncier hover */
+.stButton > button {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+}

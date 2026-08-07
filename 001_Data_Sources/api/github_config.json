@@ -1,0 +1,15 @@
+{
+    "organizations": [
+        "microsoft",
+        "apache",
+        "docker",
+        "kubernetes",
+        "google",
+        "netflix",
+        "elastic",
+        "hashicorp"
+    ],
+    "per_page": 100,
+    "max_pages": 30,
+    "output_file": "github_metadata.csv"
+}

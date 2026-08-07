@@ -1,0 +1,22 @@
+employee_id,employee_name,department,designation,Source,department_id,department_name,location,project_id,project_name,priority,extension,storage_tier,retention_years
+E001,Rahul Sharma,HR,Manager,Database,,,,,,,,,
+E002,Priya Singh,Finance,Analyst,Database,,,,,,,,,
+E003,Amit Kumar,Engineering,Developer,Database,,,,,,,,,
+E004,Sneha Patel,Marketing,Executive,Database,,,,,,,,,
+E005,Rohan Verma,IT,Administrator,Database,,,,,,,,,
+,,,,Database,D001,HR,Mumbai,,,,,,
+,,,,Database,D002,Finance,Pune,,,,,,
+,,,,Database,D003,Engineering,Bangalore,,,,,,
+,,,,Database,D004,Marketing,Delhi,,,,,,
+,,,,Database,D005,IT,Hyderabad,,,,,,
+,,Engineering,,Database,,,,P001,DataTierAI,High,,,
+,,IT,,Database,,,,P002,ERP Upgrade,Medium,,,
+,,Engineering,,Database,,,,P003,Cloud Migration,High,,,
+,,Marketing,,Database,,,,P004,Marketing Campaign,Low,,,
+,,,,Database,,,,,,,pdf,HOT,5.0
+,,,,Database,,,,,,,docx,HOT,5.0
+,,,,Database,,,,,,,xlsx,HOT,7.0
+,,,,Database,,,,,,,zip,COLD,10.0
+,,,,Database,,,,,,,log,ARCHIVE,2.0
+,,,,Database,,,,,,,csv,COLD,3.0
+,,,,Database,,,,,,,tar,ARCHIVE,5.0

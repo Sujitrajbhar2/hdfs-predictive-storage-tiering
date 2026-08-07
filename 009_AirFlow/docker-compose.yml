@@ -1,0 +1,91 @@
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: airflow-postgres
+
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+
+  airflow-init:
+    image: apache/airflow:2.10.0
+    container_name: airflow-init
+
+    depends_on:
+      - postgres
+
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+
+    command: >
+      bash -c "
+      airflow db migrate &&
+      airflow users create \
+      --username admin \
+      --password admin \
+      --firstname Sujit \
+      --lastname Rajbhar \
+      --role Admin \
+      --email admin@datatierai.com
+      "
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./scripts:/opt/airflow/scripts
+      - ../:/opt/DataTierAI
+
+  airflow-webserver:
+    image: apache/airflow:2.10.0
+    container_name: airflow-webserver
+
+    depends_on:
+      - postgres
+      - airflow-init
+
+    ports:
+      - "8080:8080"
+
+    command: webserver
+
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./scripts:/opt/airflow/scripts
+      - ../:/opt/DataTierAI
+
+  airflow-scheduler:
+    image: apache/airflow:2.10.0
+    container_name: airflow-scheduler
+
+    depends_on:
+      - airflow-webserver
+
+    command: scheduler
+
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./scripts:/opt/airflow/scripts
+      - ../:/opt/DataTierAI
+
+volumes:
+
+  postgres-db-volume:

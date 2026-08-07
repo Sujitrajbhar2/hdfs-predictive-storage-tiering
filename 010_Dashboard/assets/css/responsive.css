@@ -1,0 +1,75 @@
+/* =========================================================
+   RESPONSIVE.CSS
+   The dashboard is designed for a 1920x1080 desktop monitor
+   (that's when kpi-row-4 shows exactly 4 cards and kpi-row-3
+   shows exactly 3, as required). These media queries only
+   kick in on narrower windows, so the layout degrades
+   gracefully instead of forcing tiny cards into a cramped row.
+   ========================================================= */
+
+@media (max-width: 1300px) {
+    .kpi-row-4 { grid-template-columns: repeat(3, 230px); }
+}
+
+@media (max-width: 1100px) {
+    .block-container,
+    [data-testid="stMainBlockContainer"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .kpi-row-4,
+    .kpi-row-3 { grid-template-columns: repeat(2, 230px); }
+}
+
+@media (max-width: 750px) {
+    .page-title {
+        font-size: 22px;
+    }
+
+    .kpi-row-2,
+    .kpi-row-3,
+    .kpi-row-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .kpi-card,
+    .insight-card {
+        padding: 14px 16px;
+    }
+}
+
+/* -----------------------------------------------------------
+   CHART / INSIGHT / RECOMMENDATION ROWS - st.columns() rows.
+   Root cause of "not responsive": Streamlit's own column flex
+   items (flex: 1 1 0%) never wrap - they just get squeezed
+   narrower and narrower on small screens instead of stacking,
+   which is why 2-across charts start overlapping/clipping on
+   tablet and phone widths. Adding flex-wrap + a 100% flex-basis
+   below each breakpoint makes every row (chart cards, AI
+   Insight cards, Recommendation cards) reflow to fewer columns
+   automatically, on ANY screen width - no JS, same cards.
+   ----------------------------------------- */
+
+/* Tablet: still try to keep 2 charts per row (matches the
+   reference "2 across" chart grid) while the row has room. */
+@media (max-width: 1100px) {
+    [data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap;
+        row-gap: 16px;
+    }
+
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        flex: 1 1 calc(50% - 8px);
+        min-width: 260px;
+    }
+}
+
+/* Mobile: one card/chart per row, full width, no squeeze. */
+@media (max-width: 750px) {
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        flex: 1 1 100%;
+        min-width: 100%;
+        width: 100%;
+    }
+}

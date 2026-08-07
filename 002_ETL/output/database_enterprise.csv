@@ -1,0 +1,22 @@
+Source,Object_Name,Category,Department,Extension_Type,Size_KB,Created_Date,Modified_Date,Owner,Location,Priority,Storage_Tier
+Database,Rahul Sharma,Database Record,,,0,N/A,N/A,Rahul Sharma,,,
+Database,Priya Singh,Database Record,,,0,N/A,N/A,Priya Singh,,,
+Database,Amit Kumar,Database Record,,,0,N/A,N/A,Amit Kumar,,,
+Database,Sneha Patel,Database Record,,,0,N/A,N/A,Sneha Patel,,,
+Database,Rohan Verma,Database Record,,,0,N/A,N/A,Rohan Verma,,,
+Database,,Database Record,HR,,0,N/A,N/A,,Mumbai,,
+Database,,Database Record,Finance,,0,N/A,N/A,,Pune,,
+Database,,Database Record,Engineering,,0,N/A,N/A,,Bangalore,,
+Database,,Database Record,Marketing,,0,N/A,N/A,,Delhi,,
+Database,,Database Record,IT,,0,N/A,N/A,,Hyderabad,,
+Database,,Database Record,,,0,N/A,N/A,,,High,
+Database,,Database Record,,,0,N/A,N/A,,,Medium,
+Database,,Database Record,,,0,N/A,N/A,,,High,
+Database,,Database Record,,,0,N/A,N/A,,,Low,
+Database,,Database Record,,pdf,0,N/A,N/A,,,,HOT
+Database,,Database Record,,docx,0,N/A,N/A,,,,HOT
+Database,,Database Record,,xlsx,0,N/A,N/A,,,,HOT
+Database,,Database Record,,zip,0,N/A,N/A,,,,COLD
+Database,,Database Record,,log,0,N/A,N/A,,,,ARCHIVE
+Database,,Database Record,,csv,0,N/A,N/A,,,,COLD
+Database,,Database Record,,tar,0,N/A,N/A,,,,ARCHIVE

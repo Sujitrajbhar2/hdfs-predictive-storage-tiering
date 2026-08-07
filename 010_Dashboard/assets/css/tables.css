@@ -1,0 +1,23 @@
+/* =========================================================
+   TABLES.CSS
+   Styles the "Top 10 Largest Files" table and any other
+   st.dataframe table in the app.
+   ========================================================= */
+
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+/* Table header row */
+[data-testid="stDataFrame"] thead tr th {
+    background-color: var(--bg-secondary);
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+/* Row hover effect */
+[data-testid="stDataFrame"] tbody tr:hover {
+    background-color: var(--bg-secondary);
+}

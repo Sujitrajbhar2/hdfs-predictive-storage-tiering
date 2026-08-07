@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Airflow
+009_AirFlow/logs/
+009_AirFlow/airflow.db/
+009_AirFlow/airflow.cfg
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large generated datasets
+*.parquet
+*.zip
+
+# Generated ML files
+*.pkl
+*.joblib
+
+# Temporary output
+*/tmp/
+*/temp/

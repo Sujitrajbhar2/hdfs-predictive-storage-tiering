@@ -1,0 +1,17 @@
+/* =========================================================
+   CHARTS.CSS
+   Small tweaks around Plotly chart containers.
+   The chart colors themselves are set in Python
+   (utils/data_loader.py / the page files) so that the
+   Plotly legend and CSS colors always match.
+   ========================================================= */
+
+/* Remove extra top margin Streamlit adds above every chart */
+[data-testid="stPlotlyChart"] {
+    margin-top: -10px;
+}
+
+/* Make sure charts never overflow their card on small screens */
+[data-testid="stPlotlyChart"] > div {
+    width: 100% !important;
+}

@@ -1,0 +1,24 @@
+services:
+
+  hive-cli:
+    image: apache/hive:3.1.3
+
+    container_name: hive-cli
+    hostname: hive-cli
+
+    stdin_open: true
+    tty: true
+
+    entrypoint: ["/bin/bash"]
+
+    networks:
+      - docker_default
+
+    volumes:
+      - ./conf/hive-site.xml:/opt/hive/conf/hive-site.xml
+      - ./conf/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
+      
+
+networks:
+  docker_default:
+    external: true
