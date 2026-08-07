@@ -276,14 +276,14 @@
 }
 
 .chart-card-title {
-    font-size: 18px;
-    font-weight: 700;
-    background:#edbcbc;
-    border:1px solid #E2E8F0;   
-    border-radius:16px;
-    color:#1E3A8A;
-    box-shadow:0 8px 18px rgba(0,0,0,.05);
-    padding:18px;
+    background: #f8fafc !important;
+    color: #1e3a8a !important;
+    font-size: 16px !important;
+    font-weight: 750 !important;
+    padding: 12px 16px !important;
+    border-radius: 10px !important;
+    border-bottom: 1px solid #dbe4f0 !important;
+    margin-bottom: 10px !important;
 }
 
 

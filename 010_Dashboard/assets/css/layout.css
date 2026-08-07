@@ -1,58 +1,173 @@
 /* =========================================================
-   LAYOUT.CSS
-   Controls page spacing, section headers, and main content
-   width. This does NOT control card colors (see cards.css).
+   DATATIERAI LAYOUT
    ========================================================= */
 
-/* Give the main content area some breathing room, but keep it
-   tight against the sidebar. Using a full-width container +
-   small equal padding (instead of a narrow max-width that
-   Streamlit centers with "margin: auto") is what removes any
-   empty gap next to the sidebar and lets the dashboard use
-   almost the full browser width. Multiple selectors are
-   targeted on purpose - Streamlit has renamed this container's
-   test-id across versions. */
-.block-container,
-[data-testid="stMainBlockContainer"] {
-    padding-top: 1.1rem;
-    padding-bottom: 2.5rem;
-    padding-left: 18px;
-    padding-right: 22px;
+
+/* ---------------------------------------------------------
+   REMOVE STREAMLIT TOP HEADER SPACE
+   --------------------------------------------------------- */
+
+[data-testid="stHeader"] {
+
+    background: transparent !important;
+
+    height: 0px !important;
+}
+
+
+/* Remove header decoration */
+
+[data-testid="stDecoration"] {
+
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN CONTENT
+   --------------------------------------------------------- */
+
+[data-testid="stAppViewContainer"] .main {
+
+    padding-top: 1.5rem !important;
+}
+
+
+/* Main block */
+
+.block-container {
+
+    padding-top: 1.8rem !important;
+
+    padding-bottom: 3rem !important;
+
+    padding-left: 2.2rem !important;
+
+    padding-right: 2.2rem !important;
+
     max-width: 100% !important;
-    width: 100%;
 }
 
-[data-testid="stMain"],
-[data-testid="stAppViewContainer"] > .main {
-    padding-left: 0px;
-}
 
-/* Page main title (e.g. "DataTierAI Dashboard") - dark blue per theme */
+/* ---------------------------------------------------------
+   PAGE TITLE
+   --------------------------------------------------------- */
+
 .page-title {
-    font-size: 26px;
-    font-weight: 800;
-    color: var(--header-color);
-    margin-bottom: 0px;
+
+    color: #321535 !important;
+
+    font-size: 30px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: -0.4px;
+
+    margin-bottom: 4px !important;
 }
 
-/* Small subtitle under the page title (e.g. "Executive Summary") */
+
+/* ---------------------------------------------------------
+   PAGE SUBTITLE
+   --------------------------------------------------------- */
+
 .page-subtitle {
-    font-size: 13.5px;
-    color: var(--text-muted);
-    margin-top: 2px;
-    margin-bottom: 18px;
+
+    color: #68645D !important;
+
+    font-size: 16px !important;
+
+    font-weight: 500 !important;
+
+    margin-bottom: 24px !important;
 }
 
-/* Section headings used above each group of charts (e.g. "AI Insights") */
+
+/* ---------------------------------------------------------
+   SECTION HEADINGS
+   --------------------------------------------------------- */
+
 .section-heading {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1E3A8A;
-    margin-top: 4px;
-    margin-bottom: 12px;
+
+    color: #321535 !important;
+
+    font-size: 21px !important;
+
+    font-weight: 750 !important;
+
+    margin-top: 24px !important;
+
+    margin-bottom: 12px !important;
 }
 
-/* Adds space between one section and the next */
-.section-spacer {
-    height: 18px;
+
+/* ---------------------------------------------------------
+   CARD TITLES
+   --------------------------------------------------------- */
+
+.chart-card-title {
+
+    color: #321535 !important;
+
+    font-size: 16px !important;
+
+    font-weight: 750 !important;
+}
+
+
+/* ---------------------------------------------------------
+   NORMAL TEXT
+   --------------------------------------------------------- */
+
+p {
+
+    color: #252525;
+
+    font-size: 15px;
+}
+
+
+/* ---------------------------------------------------------
+   CAPTIONS
+   --------------------------------------------------------- */
+
+[data-testid="stCaptionContainer"] {
+
+    color: #68645D !important;
+
+    font-size: 13px !important;
+}
+
+
+/* ---------------------------------------------------------
+   DATAFRAME / TABLE TEXT
+   --------------------------------------------------------- */
+
+[data-testid="stDataFrame"] {
+
+    font-size: 14px !important;
+}
+
+
+/* ---------------------------------------------------------
+   METRIC TEXT
+   --------------------------------------------------------- */
+
+[data-testid="stMetricLabel"] {
+
+    font-size: 14px !important;
+
+    font-weight: 600 !important;
+
+    color: #68645D !important;
+}
+
+
+[data-testid="stMetricValue"] {
+
+    font-size: 28px !important;
+
+    font-weight: 800 !important;
+
+    color: #252525 !important;
 }

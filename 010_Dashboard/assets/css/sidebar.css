@@ -1,60 +1,230 @@
-/* ==========================
-   PREMIUM SIDEBAR
-========================== */
 
-section[data-testid="stSidebar"]{
-    background: linear-gradient(180deg,#3B82F6 10%,#60A5FA 60%,#93C5FD 100%);
-    color:white;
-    border-right:0;
+/* =========================================================
+   DATATIERAI SIDEBAR
+   Professional charcoal + royal purple theme
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   SIDEBAR CONTAINER
+   --------------------------------------------------------- */
+
+[data-testid="stSidebar"] {
+
+    background: linear-gradient(
+        180deg,
+        #563c62 10%,
+        #302034 55%,
+        #3D2740 100%
+    ) !important;
+
+    border-right: 1px solid rgba(255,255,255,0.08);
 }
 
-section[data-testid="stSidebar"] *{
-    color:white !important;
+
+/* Inner sidebar */
+
+[data-testid="stSidebar"] > div:first-child {
+    background: transparent !important;
+}
+
+
+/* ---------------------------------------------------------
+   SIDEBAR TEXT
+   --------------------------------------------------------- */
+
+[data-testid="stSidebar"] * {
+    color: #F5F1EA;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATION ITEMS
+   --------------------------------------------------------- */
+
+[data-testid="stSidebarNav"] a {
+
+    border-radius: 8px !important;
+
+    margin: 4px 8px !important;
+
+    padding: 11px 12px !important;
+
+    font-size: 15px !important;
+
+    font-weight: 600 !important;
+
+    color: #E8E0E8 !important;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Hover */
+
+[data-testid="stSidebarNav"] a:hover {
+
+    background: rgba(176,141,87,0.18) !important;
+
+    color: #FFFFFF !important;
+}
+
+
+/* Active */
+
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+
+    background: linear-gradient(
+        90deg,
+        #6D3A70,
+        #4C1D4F
+    ) !important;
+
+    color: #FFFFFF !important;
+
+    border-left: 3px solid #D8C29D !important;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+
+/* ---------------------------------------------------------
+   SIDEBAR DIVIDER
+   --------------------------------------------------------- */
+
+[data-testid="stSidebar"] hr {
+
+    border-color: rgba(255,255,255,0.12) !important;
+}
+
+
+/* ---------------------------------------------------------
+   DATATIERAI BRAND AREA
+   --------------------------------------------------------- */
+
+[data-testid="stSidebar"] .brand-title {
+
+    color: #FFFFFF !important;
+
+    font-size: 20px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 0.3px;
+}
+
+
+[data-testid="stSidebar"] .brand-subtitle {
+
+    color: #D8C29D !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.6;
+
+}
+
+
+/* ---------------------------------------------------------
+   SIDEBAR BUTTONS
+   --------------------------------------------------------- */
+
+[data-testid="stSidebar"] button {
+
+    color: #FFFFFF !important;
+
+    border-color: rgba(255,255,255,0.12) !important;
+
+}
+
+
+/* ---------------------------------------------------------
+   SIDEBAR COLLAPSE BUTTON
+   --------------------------------------------------------- */
+
+[data-testid="stSidebarCollapseButton"] button {
+
+    color: #FFFFFF !important;
+
+    background: transparent !important;
+
+}
+
+/* =========================================================
+   DATATIERAI SIDEBAR - VISIBILITY FIX
+   ========================================================= */
+
+/* Sidebar background */
+[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #563c62 10%,
+        #302034 55%,
+        #3D2740 100%
+    ) !important;
+}
+
+/* Main sidebar container */
+[data-testid="stSidebar"] > div:first-child {
+    background: transparent !important;
+}
+
+/* ALL sidebar text */
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] div,
+[data-testid="stSidebar"] a {
+    color: #FFFFFF !important;
 }
 
 /* Navigation buttons */
-
-.stPageLink a{
-    border-radius:12px;
-    margin-bottom:8px;
-    padding:12px 16px !important;
-    transition:.25s;
-    font-weight:600;
+[data-testid="stSidebar"] button {
+    color: #FFFFFF !important;
+    background: transparent !important;
+    border: none !important;
 }
 
-.stPageLink a:hover{
-    background:#3B82F6;
-    transform:translateX(4px);
+/* Navigation button text */
+[data-testid="stSidebar"] button p,
+[data-testid="stSidebar"] button span {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
 }
 
-.stPageLink a[aria-current="page"]{
-    background:white !important;
-    color:#1D4ED8 !important;
-    font-weight:700;
+/* Hover effect */
+[data-testid="stSidebar"] button:hover {
+    background: rgba(255, 255, 255, 0.14) !important;
+    border-radius: 10px !important;
 }
 
-.stPageLink a[aria-current="page"] *{
-    color:#1D4ED8 !important;
+/* Selected navigation item */
+[data-testid="stSidebar"] button[aria-current="page"] {
+    background: rgba(255, 255, 255, 0.20) !important;
+    border-left: 3px solid #FFFFFF !important;
+    border-radius: 10px !important;
 }
 
-/* Logo */
-
-.sidebar-logo{
-    text-align:center;
-    padding:25px 10px;
+/* Selected item text */
+[data-testid="stSidebar"] button[aria-current="page"] p,
+[data-testid="stSidebar"] button[aria-current="page"] span {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
 }
 
-.sidebar-logo img{
-    width:90px;
+/* DataTierAI brand name */
+[data-testid="stSidebar"] .sidebar-brand,
+[data-testid="stSidebar"] .brand-title {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
 }
 
-.sidebar-title{
-    font-size:24px;
-    font-weight:700;
-    margin-top:10px;
+/* DataTierAI description */
+[data-testid="stSidebar"] .brand-subtitle {
+    color: rgba(255, 255, 255, 0.82) !important;
 }
 
-.sidebar-subtitle{
-    font-size:13px;
-    opacity:.85;
+/* Divider */
+[data-testid="stSidebar"] hr {
+    border-color: rgba(255, 255, 255, 0.20) !important;
 }

@@ -148,7 +148,6 @@ DataTierAI aims to help enterprises automate storage lifecycle management by red
 <h2 style="color:#1E3A8A;">👨‍💻 Developed Using</h2>
 
 <p>
-CDAC PG-Diploma Major Project<br>
 Enterprise Data Engineering • Machine Learning • Big Data Analytics
 </p>
 

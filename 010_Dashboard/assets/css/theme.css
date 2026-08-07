@@ -1,40 +1,48 @@
 /* =========================================================
-   THEME.CSS
-   This file holds ALL the colors used in the dashboard.
-   If you want to change the color theme, this is the ONLY
-   file you need to touch. Every other CSS file just uses
-   the variable names below (like var(--primary)).
+   DATATIERAI - PROFESSIONAL ROYAL THEME
+   Main colors are controlled from this file.
    ========================================================= */
 
 :root {
-    /* Backgrounds */
-    --bg-main: #EEF5FC;
-    --bg-secondary: #F6FAFF;
+
+    /* ================= BACKGROUNDS ================= */
+
+    --bg-main: #F5F3EF;
+    --bg-secondary: #ECE9E3;
     --bg-card: #FFFFFF;
 
-    /* Borders */
-    --border-color: #D6E7FF;
+    /* ================= BORDERS ================= */
 
-    /* Brand colors */
-    --primary: #2563EB;
-    --accent: #3B82F6;
+    --border-color: #DDD8CE;
 
-    /* Status colors */
-    --success: #16A34A;
-    --warning: #F59E0B;
-    --danger: #EF4444;
+    /* ================= BRAND ================= */
 
-    /* Text colors */
-    --text-main: #1E293B;
-    --text-muted: #64748B;
-    --header-color: #1E3A8A;  /* dark blue, used for page titles / section headings */
+    --primary: #4C1D4F;
+    --primary-light: #6D3A70;
+    --accent: #B08D57;
+    --accent-light: #D8C29D;
 
-    /* Shadows (used across cards, tables, buttons) */
-    --shadow-soft: 0 4px 14px rgba(37, 99, 235, 0.08);
-    --shadow-hover: 0 10px 24px rgba(37, 99, 235, 0.14);
+    /* ================= STATUS ================= */
 
-    /* Corner roundness (change this once to round every card/table) */
+    --success: #16803C;
+    --warning: #C47F00;
+    --danger: #C0392B;
+    --info: #4C1D4F;
+
+    /* ================= TEXT ================= */
+
+    --text-main: #252525;
+    --text-muted: #68645D;
+    --header-color: #321535;
+
+    /* ================= SHADOWS ================= */
+
+    --shadow-soft: 0 4px 16px rgba(60, 45, 30, 0.08);
+    --shadow-hover: 0 10px 28px rgba(60, 45, 30, 0.14);
+
+    /* ================= RADIUS ================= */
+
     --radius-lg: 14px;
     --radius-md: 10px;
-    --radius-sm: 8px;
+    --radius-sm: 7px;
 }

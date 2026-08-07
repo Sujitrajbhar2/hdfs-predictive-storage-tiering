@@ -284,45 +284,56 @@ def chart_card(key):
     with container:
         yield container
 
-def get_base_plotly_layout(height=340):
-    return dict(
-        paper_bgcolor="white",
-        plot_bgcolor="white",
+def get_base_plotly_layout():
+    return {
+        "paper_bgcolor": "rgba(0,0,0,0)",
+        "plot_bgcolor": "rgba(0,0,0,0)",
 
-        height=height,
+        "font": {
+            "family": "Arial",
+            "color": "#334155",
+            "size": 13,
+        },
 
-        margin=dict(
-            l=30,
-            r=20,
-            t=25,
-            b=35
-        ),
+        "margin": {
+            "l": 45,
+            "r": 25,
+            "t": 45,
+            "b": 45,
+        },
 
-        font=dict(
-            family="Inter",
-            size=13,
-            color="#334155"
-        ),
+        "xaxis": {
+            "color": "#334155",
+            "tickfont": {
+                "color": "#334155",
+                "size": 12,
+            },
+            "title_font": {
+                "color": "#334155",
+                "size": 13,
+            },
+            "gridcolor": "#E2E8F0",
+            "zerolinecolor": "#CBD5E1",
+        },
 
-        xaxis=dict(
-            showgrid=False,
-            zeroline=False,
-            tickfont=dict(color="#334155"),
-            title_font=dict(color="#334155")
-        ),
+        "yaxis": {
+            "color": "#334155",
+            "tickfont": {
+                "color": "#334155",
+                "size": 12,
+            },
+            "title_font": {
+                "color": "#334155",
+                "size": 13,
+            },
+            "gridcolor": "#E2E8F0",
+            "zerolinecolor": "#CBD5E1",
+        },
 
-        yaxis=dict(
-            showgrid=True,
-            gridcolor="#E2E8F0",
-            zeroline=False,
-            tickfont=dict(color="#334155"),
-            title_font=dict(color="#334155")
-        ),
-
-        legend=dict(
-            font=dict(
-                color="#334155",
-                size=12
-            )
-        )
-    )
+        "hoverlabel": {
+            "font": {
+                "color": "#172033",
+                "size": 13,
+            }
+        },
+    }
